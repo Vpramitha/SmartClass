@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#FBEDDD">
+    <ImageView
+        android:id="@+id/ImgBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/img" />
+
+
+    <TextView
+        android:id="@+id/Heading1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time Table"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/Mon"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:background="@drawable/backtext"
+            android:height="40dp"
+            android:clickable="true"
+            />
+        <TextView
+            android:id="@+id/Tue"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="T"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:background="@drawable/backtext"
+            android:height="40dp"
+            android:clickable="true"
+            />
+        <TextView
+            android:id="@+id/Wen"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="W"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:background="@drawable/backtext"
+            android:height="40dp"
+            android:clickable="true"
+            />
+        <TextView
+            android:id="@+id/Thu"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="T"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:background="@drawable/backtext"
+            android:height="40dp"
+            android:clickable="true"
+            />
+        <TextView
+            android:id="@+id/Fri"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:background="@drawable/backtext"
+            android:height="40dp"
+            android:clickable="true"
+            />
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Period"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Period 1"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/Subject1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Subject 1"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Period 2"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/Subject2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Subject 2"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Period 3"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/Subject3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Subject 3"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Period 4"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/Subject4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Subject 4"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Interval"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_span="2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Period 5"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/Subject5"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Subject 5"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Period 6"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/Subject6"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Subject 6"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Period 7"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/Subject7"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Subject 7"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Period 8"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/Subject8"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Subject 8"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>

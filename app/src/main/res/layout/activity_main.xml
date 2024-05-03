@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBEDDD"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:background="#E5CCAE"
+        android:rotation="37.38"
+        android:layout_marginTop="-60dp"
+        android:layout_marginLeft="-243dp"
+        />
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="-243dp"
+        android:background="#E9AE69"
+        android:rotation="37.38"
+        />
+    <View
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginLeft="-243dp"
+        android:rotation="37.38"
+        android:background="#DF7B05"
+        />
+
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="#E5CCAE"
+        android:rotation="-98"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="-120dp"
+        />
+
+    <View
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="-126dp"
+        android:layout_marginLeft="300dp"
+        android:background="#E9AE69"
+        android:rotation="-98.38"
+        />
+    <View
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="-140dp"
+        android:layout_marginLeft="310dp"
+        android:rotation="-98.38"
+        android:background="#DF7B05"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="Who Are You?"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_marginBottom="-200dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radioStudent"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:text="Student"
+            android:theme="@style/MyRadioButton"
+
+            />
+
+        <RadioButton
+            android:id="@+id/radioTeacher"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Teacher"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:theme="@style/MyRadioButton"
+            />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/radioGroup"
+        android:layout_marginLeft="230dp"
+        android:layout_marginBottom="-180dp"
+        android:backgroundTint="#DF7B05"
+        android:text="Next"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>

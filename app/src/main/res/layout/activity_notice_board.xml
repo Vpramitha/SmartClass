@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoticeBoard"
+    android:background="#FBEDDD">
+
+
+    <ImageView
+        android:id="@+id/BackImg"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/Heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="Notice Board"
+        android:layout_below="@id/BackImg"
+        android:layout_marginBottom="30dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_below="@id/Heading"
+        android:background="@drawable/massageback"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <ScrollView
+            android:id="@+id/ScrollNotices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout">
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

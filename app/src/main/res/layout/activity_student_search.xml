@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".TeacherDashBoard"
+    android:background="#FBEDDD"
+    android:layout_centerHorizontal="true" >
+
+    <ImageView
+        android:id="@+id/ImgBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/img" />
+
+    <TextView
+        android:id="@+id/Heading1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search For A Student"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/StudentID"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Student ID"
+        android:textColorHint="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="#E5CCAE"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:id="@+id/StudentSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DF7B05"
+        android:text="Search"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/StudentID"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/StudentSearch"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Name">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout1"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Contact">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/Contact"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout2"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Grade">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/Grade"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout3"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Class">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/Class"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content">
+        </EditText>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

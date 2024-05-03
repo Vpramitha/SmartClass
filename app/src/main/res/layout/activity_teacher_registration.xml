@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherRegistration"
+    android:background="#FBEDDD">
+
+
+    <TextView
+        android:id="@+id/HeadBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:layout_marginTop="40dp"/>
+
+    <ImageView
+        android:id="@+id/BackImg"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/HeadBar"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/img"
+        android:layout_marginTop="10dp" />
+
+
+    <ScrollView
+        android:layout_below="@id/HeadBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp">
+
+
+            <EditText
+                android:id="@+id/TeacherName"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/backtext"
+                android:ems="10"
+                android:hint=" Name"
+                android:inputType="text"
+                android:text=""
+
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/TeacherID"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text=""
+                android:hint=" Teacher ID"
+                android:layout_below="@id/TeacherName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:textSize="25sp"
+                android:background="@drawable/backtext"/>
+
+            <EditText
+                android:id="@+id/TeacherNIC"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text=""
+                android:hint=" NIC"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:textSize="25sp"
+                android:layout_below="@id/TeacherID"
+                android:background="@drawable/backtext"/>
+
+
+
+            <EditText
+                android:id="@+id/TeacherContact"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text=""
+                android:hint=" Contact"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:digits="0123456789"
+                android:textSize="25sp"
+                android:layout_below="@id/TeacherNIC"
+                android:background="@drawable/backtext"/>
+
+
+
+            <EditText
+                android:id="@+id/TeacherPassword"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:text=""
+                android:hint=" Password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:textSize="25sp"
+                android:layout_below="@id/TeacherContact"
+                android:background="@drawable/backtext"/>
+
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/Eye1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/hide"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="340dp"
+                android:layout_below="@+id/TeacherContact"/>
+
+            <EditText
+                android:id="@+id/ConfirmPassword"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:text=""
+                android:hint=" Confirm Password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:textSize="25sp"
+                android:layout_below="@+id/TeacherPassword"
+                android:background="@drawable/backtext"/>
+
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/Eye2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/hide"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="340dp"
+                android:layout_below="@+id/TeacherPassword"/>
+
+
+            <Button
+                android:id="@+id/Next"
+                android:layout_marginTop="40dp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textSize="30dp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#DF7B05"
+                android:layout_below="@+id/ConfirmPassword"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

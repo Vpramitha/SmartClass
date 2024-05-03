@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBEDDD"
+    tools:context=".SplashScreen">
+
+
+    <View
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:background="#E5CCAE"
+        android:rotation="37.38"
+        android:layout_marginTop="-60dp"
+        android:layout_marginLeft="-243dp"
+        />
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="-243dp"
+        android:background="#E9AE69"
+        android:rotation="37.38"
+        />
+    <View
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginLeft="-243dp"
+        android:rotation="37.38"
+        android:background="#DF7B05"
+        />
+
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="#E5CCAE"
+        android:rotation="-98"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="-120dp"
+        />
+
+    <View
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="-126dp"
+        android:layout_marginLeft="300dp"
+        android:background="#E9AE69"
+        android:rotation="-98.38"
+        />
+    <View
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="-140dp"
+        android:layout_marginLeft="310dp"
+        android:rotation="-98.38"
+        android:background="#DF7B05"
+        />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/Welcome1View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="94dp"
+        android:layout_marginTop="180dp"
+        android:textColor="#000000"
+        />
+
+
+    <TextView
+        android:id="@+id/Welcome2View"
+        android:layout_below="@id/Welcome1View"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Student Record Book"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="94dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/Welcome3View"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/Welcome2View"
+        android:text="Of the ABC College Colombo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <TextView
+        android:id="@+id/LoadingView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/Welcome3View"
+        android:layout_marginTop="130dp"
+        android:text="Loading"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="94dp"
+        android:textColor="#000000"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/LoadingView"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/GroupName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/progressBar"
+        android:layout_marginTop="30dp"
+        android:text="Group MVTV Production"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="94dp"
+        android:textColor="#000000"
+        />
+
+</RelativeLayout>
